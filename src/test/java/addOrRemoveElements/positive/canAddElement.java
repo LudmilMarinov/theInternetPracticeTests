@@ -15,6 +15,7 @@ import static org.testng.Assert.assertEquals;
 
 public class canAddElement {
     public static WebDriver driver;
+
     /**
      * Starts browser maximized
      */
@@ -28,6 +29,7 @@ public class canAddElement {
         driver.get("https://the-internet.herokuapp.com/");
 
     }
+
     /**
      * After test is complete quits the opened browser
      */
@@ -36,7 +38,7 @@ public class canAddElement {
 //        driver.quit();
 //    }
     @Test
-    public void addElement(){
+    public void addElement() {
 
         WebElement linkElement = driver.findElement(By.cssSelector("a[href='/add_remove_elements/']"));
         linkElement.click();
